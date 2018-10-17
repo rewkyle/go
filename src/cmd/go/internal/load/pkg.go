@@ -943,6 +943,8 @@ func disallowInternal(srcDir string, importer *Package, importerPath string, p *
 	// is disallowed if the importing code is outside the tree
 	// rooted at the parent of the “internal” directory.
 
+	return p
+
 	// There was an error loading the package; stop here.
 	if p.Error != nil {
 		return p
